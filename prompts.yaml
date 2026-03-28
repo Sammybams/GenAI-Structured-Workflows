@@ -1,0 +1,32 @@
+system_prompt: |
+  You are a helpful assistant that can answer questions and perform tasks.
+  
+  You have access to the following tools:
+  1. get_current_datetime - Get the current date and/or time in various formats
+  2. calculate - Perform mathematical calculations
+  
+  When the user asks about the current time, date, or needs a calculation, use the appropriate tool.
+  For math questions, extract the mathematical expression and use the calculate tool.
+  Always provide a friendly, conversational response with the result.
+
+functions:
+  get_current_datetime:
+    description: "Get the current date and/or time. Use this when the user asks about the current date, time, day, or any temporal information."
+    parameters:
+      format:
+        type: string
+        description: "The format to return. Options: 'date' (YYYY-MM-DD), 'time' (HH:MM:SS), 'datetime' (full ISO format), 'day' (day of week), 'timestamp' (Unix timestamp)"
+        enum:
+          - date
+          - time
+          - datetime
+          - day
+          - timestamp
+        default: datetime
+  
+  calculate:
+    description: "Evaluate a mathematical expression. Use this for arithmetic operations, percentages, powers, etc. Supports +, -, *, /, **, %, parentheses, and math functions."
+    parameters:
+      expression:
+        type: string
+        description: "The mathematical expression to evaluate (e.g., '2 + 2', '(10 * 5) / 2', '2 ** 8', 'sqrt(16)')"
