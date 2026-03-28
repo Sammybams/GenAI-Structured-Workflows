@@ -288,8 +288,8 @@ FastAPI application with:
 
 ## Resources
 
-- [Azure OpenAI Structured Outputs Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/structured-outputs)
-- [Azure OpenAI Function Calling Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling)
+- [Azure OpenAI Structured Outputs Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/structured-outputs?wt.mc_id=studentamb_217190)
+- [Azure OpenAI Function Calling Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling?wt.mc_id=studentamb_217190)
 - [OpenAI JSON Schema Guide](https://platform.openai.com/docs/guides/structured-outputs)
 
 ---
